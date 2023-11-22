@@ -183,7 +183,6 @@ class RunLeftDown:
     def do(boy):
         pass
 
-
 class RunUp:
     @staticmethod
     def enter(boy, e):

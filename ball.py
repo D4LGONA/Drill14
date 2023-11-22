@@ -30,7 +30,6 @@ class Ball:
         match group:
             case 'boy:ball':
                 game_world.remove_object(self)
-                #other.ball = self # 소년이 볼을 소유하도록.
                 pass
             case 'zombie:ball':
                 other.ball = self

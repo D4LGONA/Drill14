@@ -38,7 +38,7 @@ def init():
     game_world.add_object(server.boy, 2)
     server.boy.set_background(server.background)
 
-    balls = [Ball(random.randint(0, server.background.w), random.randint(0, server.background.h)) for _ in range(100)]
+    balls = [Ball(random.randint(0 + 50, server.background.w - 50), random.randint(0 + 50, server.background.h - 50)) for _ in range(100)]
     game_world.add_objects(balls, 1)
 
     game_world.add_collision_pair('boy:ball', server.boy, None)
@@ -66,6 +66,3 @@ def pause():
 
 def resume():
     pass
-
-
-
